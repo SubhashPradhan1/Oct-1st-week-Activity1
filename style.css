@@ -1,0 +1,395 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #17233d;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    gap: 20px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #3157d5;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #46516a;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #3157d5;
+}
+
+.nav-button,
+.primary-button {
+    display: inline-block;
+    background: #3157d5;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 10%;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    display: inline-block;
+    color: #3157d5;
+    background: #e3eaff;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.15;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #3157d5;
+}
+
+.hero-content p,
+.section-heading p,
+.form-info p {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+.primary-button {
+    margin-top: 5px;
+}
+
+.hero-card {
+    width: 350px;
+    min-width: 280px;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(36, 55, 110, 0.12);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.hero-card h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.hero-card > p {
+    color: #667085;
+    margin-bottom: 22px;
+}
+
+.support-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-top: 1px solid #edf0f5;
+    font-size: 14px;
+}
+
+.services,
+.complaints {
+    padding: 75px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+.form-info h2 {
+    font-size: 32px;
+    margin: 15px 0 8px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 28px;
+    border: 1px solid #e9edf5;
+    border-radius: 14px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(36, 55, 110, 0.08);
+}
+
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #667085;
+    font-size: 14px;
+}
+
+.complaints {
+    background: white;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e9edf5;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 18px;
+    border-bottom: 1px solid #edf0f5;
+    white-space: nowrap;
+}
+
+th {
+    background: #f7f9fc;
+    color: #46516a;
+    font-size: 13px;
+}
+
+td {
+    font-size: 14px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pending {
+    background: #fff2d6;
+    color: #996500;
+}
+
+.progress {
+    background: #e3eaff;
+    color: #3157d5;
+}
+
+.resolved {
+    background: #dff7e8;
+    color: #168047;
+}
+
+.submit-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    padding: 80px 10%;
+    background: #f1f4ff;
+}
+
+.form-info {
+    padding-top: 20px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(36, 55, 110, 0.08);
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce2ed;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 14px;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #b9c9ff;
+    border-color: #3157d5;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #3157d5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover,
+.nav-button:hover,
+.primary-button:hover {
+    background: #2342ad;
+}
+
+footer {
+    padding: 40px 10%;
+    text-align: center;
+    background: #17233d;
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #c3ccdf;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 850px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 18px 5%;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 60px 7%;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .services,
+    .complaints {
+        padding: 55px 7%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-section {
+        grid-template-columns: 1fr;
+        padding: 55px 7%;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .section-heading h2,
+    .form-info h2 {
+        font-size: 27px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
