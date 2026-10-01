@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Student Support Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">CampusConnect</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#complaints">Complaints</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#submit" class="nav-button">Get Support</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">STUDENT SUPPORT PORTAL</span>
+
+                <h1>Your Campus.<br>
+                    Your Voice.<br>
+                    <span>Your Solution.</span>
+                </h1>
+
+                <p>
+                    A simple platform to share your problems,
+                    submit complaints, and get the support
+                    you need in your campus.
+                </p>
+
+                <a href="#submit" class="primary-button">
+                    Submit a Complaint →
+                </a>
+            </div>
+
+            <div class="hero-card">
+                <div class="card-icon">🎓</div>
+                <h2>Student Help Center</h2>
+                <p>We are here to help you.</p>
+
+                <div class="support-item">
+                    <span>📚 Academic Support</span>
+                    <span>→</span>
+                </div>
+
+                <div class="support-item">
+                    <span>🏫 Campus Facilities</span>
+                    <span>→</span>
+                </div>
+
+                <div class="support-item">
+                    <span>💬 General Complaints</span>
+                    <span>→</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-heading">
+                <span class="tag">HOW WE HELP</span>
+                <h2>Support for Every Student</h2>
+                <p>Find help for common campus problems.</p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-icon">📖</div>
+                    <h3>Academic Issues</h3>
+                    <p>
+                        Get help with classes, exams,
+                        assignments, and academic concerns.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Campus Facilities</h3>
+                    <p>
+                        Report issues related to classrooms,
+                        hostels, water, and electricity.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Student Assistance</h3>
+                    <p>
+                        Share your concerns and find the
+                        right support for your needs.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="complaints" id="complaints">
+            <div class="section-heading">
+                <span class="tag">COMPLAINT CENTER</span>
+                <h2>Recent Complaints</h2>
+                <p>Example complaints submitted by students.</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Category</th>
+                            <th>Issue</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#CC101</td>
+                            <td>Facilities</td>
+                            <td>Classroom fan not working</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#CC102</td>
+                            <td>Academic</td>
+                            <td>Exam schedule clarification</td>
+                            <td><span class="status progress">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#CC103</td>
+                            <td>Hostel</td>
+                            <td>Water supply issue</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="submit-section" id="submit">
+            <div class="form-info">
+                <span class="tag">WE ARE LISTENING</span>
+                <h2>Tell Us What's Wrong</h2>
+                <p>
+                    Fill in the form to share your concern
+                    with the campus support team.
+                </p>
+            </div>
+
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="category">Complaint Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="academic">Academic</option>
+                    <option value="facilities">Campus Facilities</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Describe Your Problem</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Write your complaint here..."
+                          required></textarea>
+
+                <button type="submit">Submit Complaint →</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>CampusConnect</h2>
+        <p>Making campus life better, one solution at a time.</p>
+        <p class="copyright">© 2026 CampusConnect. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

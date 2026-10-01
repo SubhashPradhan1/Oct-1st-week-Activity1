@@ -1,0 +1,24 @@
+EVIDENCE CARD 01
+Screenshot note:
+"On a 360px mobile screen, the complaint table pushes the entire page sideways."
+Classification: REAL / FAKE / UNKNOWN
+
+EVIDENCE CARD 02
+Developer note:
+"The API is returning data correctly."
+Classification: REAL / FAKE / UNKNOWN
+
+EVIDENCE CARD 03
+Requirement:
+"Every interactive form field must have a visible label."
+Classification: REAL / FAKE / UNKNOWN
+
+EVIDENCE CARD 04
+Console note:
+"Uncaught TypeError: submitComplaint is not a function"
+Classification: REAL / FAKE / UNKNOWN
+
+EVIDENCE CARD 05
+Design note:
+"The service cards must be usable on desktop and mobile."
+Classification: REAL / FAKE / UNKNOWN

@@ -1,0 +1,23 @@
+TEAM 1 — FRONTEND REQUIREMENTS
+
+Goal:
+Repair the CampusConnect frontend and make it usable on desktop, tablet and mobile.
+
+Must verify:
+1. All navigation links point to valid sections.
+2. Every form field has a label.
+3. Required fields are clearly handled.
+4. Cards remain readable on small screens.
+5. Complaint table can be viewed without breaking the page.
+6. Buttons are visible and clickable.
+7. No horizontal overflow on a 360px-wide screen.
+8. Heading hierarchy is sensible.
+9. Color/status labels are understandable.
+10. Explain at least 3 frontend problems found.
+
+Deliver:
+- corrected index.html
+- corrected style.css
+- frontend investigation sheet
+- evidence classification
+- 5-minute explanation
